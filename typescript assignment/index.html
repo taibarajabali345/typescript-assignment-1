@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typescript Assignment</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <div id="record-form">
+        <h1>Population Record Form</h1>
+        <input type="text" id="name" placeholder="Name" required />
+        
+        <div>
+            <label>Gender:</label>
+            <label><input type="radio" name="gender" value="Male" required /> Male</label>
+            <label><input type="radio" name="gender" value="Female" /> Female</label>
+            <label><input type="radio" name="gender" value="Other" /> Other</label>
+        </div>
+
+        <input type="text" id="address" placeholder="Address" required />
+
+        <label for="education">Education:</label>
+        <select id="education">
+            <option value="High School">High School</option>
+            <option value="Bachelor's">Bachelor's</option>
+            <option value="Master's">Master's</option>
+            <option value="Doctorate">Doctorate</option>
+        </select>
+
+        <label for="profession">Profession:</label>
+        <select id="profession">
+            <option value="Engineer">Engineer</option>
+            <option value="Doctor">Doctor</option>
+            <option value="Teacher">Teacher</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <button onclick="saveRecord()">Save Record</button>
+    </div>
+
+    <h2>Saved Records</h2>
+    <div id="records"></div>
+
+    <script src="demo.js"></script> 
+</body>
+</html>
